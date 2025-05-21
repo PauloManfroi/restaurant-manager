@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace AppConsole.Models
 {
+    // declarar cada item
     public class MenuItem
     {
         public string Name { get; set; }
@@ -12,47 +13,47 @@ namespace AppConsole.Models
         public decimal Price { get; set; }
         public bool Disponivel { get; set; }
 
-    
-        //métodos para registrar separadamente
+
+        //métodos para registrar separadamente cada item
         public static List<MenuItem> cardapio = new List<MenuItem>
             {
                 new MenuItem
                 {
-                    Name = "X-TUDO",
+                    Name = "1 - X-TUDO",
                     Descricao = "Pão, 2 hamburguers 120g, bacon, salsicha, ovo, alface, tomate, maionese, molho da casa.",
                     Price = 30.00m,
                     Disponivel = true
                 },
                 new MenuItem
                 {
-                    Name = "Batata Frita",
+                    Name = "2 - Batata Frita",
                     Descricao = "Batatas Fritas 400g",
                     Price = 28.00m,
                     Disponivel = true
                 },
                 new MenuItem
                 {
-                    Name = "Iscas de Tilápa",
+                    Name = "3 - Iscas de Tilápa",
                     Descricao = "Iscas de Tilápia fritas 500g, acompanhadas de limão e molho da casa.",
                     Price = 50.00m,
                     Disponivel = true
                 },
                 new MenuItem
                 {
-                    Name = "Coca-Cola Lata",
+                    Name = "4 - Coca-Cola Lata",
                     Descricao = "Lata de Refrigerante Coca-Cola 350ml",
                     Price = 6.00m,
                     Disponivel = true
                 },
                 new MenuItem
                 {
-                    Name = "Agua",
+                    Name = "5 - Agua",
                     Descricao = "Garrafa de agua mineral sem gás 500ml",
                     Price = 4.00m,
                     Disponivel = true
                 }
             };
-        
+
     }
 
 }
